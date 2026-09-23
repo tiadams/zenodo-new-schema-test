@@ -1,12 +1,31 @@
 {
-  "title": "FLAT SCHEMA TEST",
-  "description": "This is a test of the GitHub .zenodo.json metadata format.",
+  "title": "Zenodo Multiple Affiliation Array Test",
+  "description": "Test record for checking whether Zenodo's GitHub integration accepts multiple creator affiliations as an array.",
   "creators": [
     {
-      "name": "Adams, Tim"
+      "name": "Doe, Jane",
+      "orcid": "0000-0001-2345-6789",
+      "affiliation": [
+        "University of Example, Department of Computer Science",
+        "Example Research Institute, Department of Data Science"
+      ]
     }
   ],
+  "contributors": [
+    {
+      "name": "Smith, John",
+      "affiliation": "Example Research Institute",
+      "type": "Researcher"
+    }
+  ],
+  "keywords": [
+    "test",
+    "zenodo",
+    "metadata",
+    "multiple affiliations"
+  ],
+  "license": "Apache-2.0",
   "upload_type": "software",
   "access_right": "open",
-  "license": "Apache-2.0"
+  "language": "eng"
 }
